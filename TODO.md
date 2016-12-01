@@ -1,10 +1,11 @@
 #TODO list
 
 ###Everybody
-1. Choose one of the three possible topics. Related Kaggle competitions:
+[DONE] 1. Choose one of the three possible topics. Related Kaggle competitions:
 	* https://inclass.kaggle.com/c/epfml-rec-sys
 	* https://inclass.kaggle.com/c/epfml-text
 	* https://inclass.kaggle.com/c/epfml-segmentation
+--> We have decided to take recommender system.
 2. Register the team (we're still waiting for instructions)
 
 --------------------------------------------------------------------------------
