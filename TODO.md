@@ -19,7 +19,8 @@ deadline: in a few days-this first points should not be so difficult
 8. determine if model overfitts or underfits and set parameters and do regularisation according to that  
 9. do some kind of visualisation of model, this could be done as any step, just to see how model works  
 10. WRITE A REPORT - VERY IMPORTANT  
-11. SUBMIT FINAL SOLUTION  
+11. SUBMIT FINAL WORKING SOLUTION  
+
 --------------------------------------------------------------------------------
 
 ####Paweł
