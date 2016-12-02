@@ -5,7 +5,7 @@
 	* https://inclass.kaggle.com/c/epfml-rec-sys
 	* https://inclass.kaggle.com/c/epfml-text
 	* https://inclass.kaggle.com/c/epfml-segmentation
---> We have decided to take recommender system. \\
+--> We have decided to take recommender system.  
 2. Register the team (we're still waiting for instructions)
 VERY ROUGH DESCRIPTION
 3. data_set is given in specific form-make it be matrix NxN where on i,j position is rating for i-th movie and j-th user
