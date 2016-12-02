@@ -27,7 +27,7 @@ deadline: in a few days-this first points should not be so difficult
 
 --------------------------------------------------------------------------------
 
-####Ana - currently working on 3. dot
+####Ana - i did 3rd dot and i coded 5.dot but it is not tested if it works
 
 --------------------------------------------------------------------------------
 
