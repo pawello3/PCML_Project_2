@@ -8,7 +8,7 @@
 --> We have decided to take recommender system.  
 2. Register the team (we're still waiting for instructions)  
 VERY ROUGH DESCRIPTION  
-3. data_set is given in specific form-make it be matrix NxN where on i,j position is rating for i-th movie and j-th user  
+[DONE]3. data_set is given in specific form-make it be matrix NxN where on i,j position is rating for i-th movie and j-th user  
 4. decide which libraries to use, scikit and panda are first choices, but think about it  
 5. make basic model which would predict missing rating using matrix factorisation  
 6. make cross-validation to check basic accuracy of prediction  
