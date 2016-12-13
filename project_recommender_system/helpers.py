@@ -39,8 +39,7 @@ def preprocess_data(data):
     # do statistics on the dataset.
     min_row, max_row, min_col, max_col = statistics(data)
     print("number of items: {}, number of users: {}".format(max_row, max_col))
-    print("min_row var stores value: {}, min_col var stores value: {}".format(min_row, min_row))
-
+    
     # build rating matrix.
     ratings = sp.lil_matrix((max_row, max_col))
     for row, col, rating in data:
@@ -73,4 +72,4 @@ def build_index_groups(train):
 def calculate_mse(real_label, prediction):
     """calculate MSE."""
     t = real_label - prediction
-    return 1.0 * t.dot(t.T) / len(t)
+    return np.sqrt(1.0 * t.dot(t.T) / len(t))
