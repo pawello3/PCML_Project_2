@@ -93,7 +93,7 @@ def create_csv_submission(user_features, item_features, submission_file_path = "
     nz_row_sr, nz_col_sr = sample_ratings.nonzero()
     nz_sr = list(zip(nz_row_sr, nz_col_sr))
     
-    prediction = user_features * item_features.T
+    prediction = item_features.dot(user_features.T)
     
     with open(dataset_file_path, 'w') as csvfile:
         fieldnames = ['Id', 'Prediction']
