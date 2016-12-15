@@ -74,31 +74,3 @@ def calculate_mse(real_label, prediction):
     """calculate MSE."""
     t = real_label - prediction
     return np.sqrt(1.0 * t.dot(t.T) / len(t))
-
-
-def create_csv_submission(user_features, item_features, submission_file_path = "submission.csv"):
-    """
-        Creates an output file in csv format for submission to kaggle.
-
-        Arguments:
-            user_features: matrix W
-            item_features: matrix Z
-            submission_file_path: string name of .csv output file to be created
-    """
-
-    dataset_file_path = "sampleSubmission.csv" # file path to the dataset of the entries to be predicted
-    sample_ratings = load_data(dataset_file_path)
-    
-    # find the non-zero ratings indices 
-    nz_row_sr, nz_col_sr = sample_ratings.nonzero()
-    nz_sr = list(zip(nz_row_sr, nz_col_sr))
-    
-    prediction = user_features * item_features.T
-    
-    with open(dataset_file_path, 'w') as csvfile:
-        fieldnames = ['Id', 'Prediction']
-        writer = csv.DictWriter(csvfile, delimiter=",", fieldnames=fieldnames)
-        writer.writeheader()
-        for i, j in nz_sr:
-            writer.writerow({'Id' : 'r' + str(i + 1) + '_' + 'c' + str(j + 1),
-                             'Prediction' : str(prediction[i, j])})
