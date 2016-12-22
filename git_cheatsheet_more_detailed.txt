@@ -3,7 +3,7 @@
 # First we start with cloning the repository
 $ git clone <repo_url>
 
-# We need to move to the directory containing ".git" directory (it is a hidden file on unix-like systems; in our case it would be PCML_Project_2
+# We need to move to the directory containing ".git" directory (it is a hidden file on unix-like systems); in our case it would be PCML_Project_2
 $ cd PCML_Project_2
 
 
@@ -31,6 +31,9 @@ $ git push origin master
 
 # Sometimes you may want to drop your changes instead of commiting them (it will also delete untracked files - the files that weren't added)
 $ git stash -u
+
+# You may also want to revert the changes done to one particular file
+$ git checkout -- <name_of_the_file>
 
 
 
