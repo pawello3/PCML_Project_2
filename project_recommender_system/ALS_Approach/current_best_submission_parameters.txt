@@ -1,0 +1,34 @@
+20161222_104053 submission.csv
+init_method_num = 1
+num_epochs = 100
+cutoff = False
+max_iter_threshold = 0.00005
+num_features = 50
+lambda_item = 60
+lambda_user = 10
+split_ratio = 1.0
+
+Kaggle score: 0.99162
+https://inclass.kaggle.com/c/epfml-rec-sys/leaderboard?submissionId=3947025
+
+
+
+20161222_104339 submission.csv
+init_method_num = 3
+num_epochs = 1
+cutoff = False
+max_iter_threshold = 0.00005
+num_features = 100
+lambda_item = 60
+lambda_user = 10
+split_ratio = 1.0
+
+Kaggle score: 0.98890
+https://inclass.kaggle.com/c/epfml-rec-sys/leaderboard?submissionId=3947030
+
+
+
+20161222_104612 merged submission.csv
+Combined two above (by averaging)
+Kaggle score: 0.98864
+https://inclass.kaggle.com/c/epfml-rec-sys/leaderboard?submissionId=3947019
