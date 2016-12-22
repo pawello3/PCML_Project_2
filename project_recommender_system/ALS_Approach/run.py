@@ -34,6 +34,7 @@ def initialize_matrices_first_column_mean(train, num_features):
     """
         Initialize randomly matrices W and Z of matrix factorization.
         In matrix W first column is assigned to average rating for that movie.
+        In matrix Z first column is assigned to average rating for that user.
 
         Arguments:
             train: training set (matrix X)
@@ -49,6 +50,7 @@ def initialize_matrices_first_column_mean(train, num_features):
     item_features[:, 0] = train.mean(axis=1).reshape(item_features.shape[0])
     # Z matrix initialization
     user_features = np.random.random((train.shape[1], num_features))
+    user_features[:, 0] = train.mean(axis=0).reshape(user_features.shape[0])
 
     return item_features, user_features
 
