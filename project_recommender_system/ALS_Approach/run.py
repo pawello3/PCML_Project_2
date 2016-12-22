@@ -201,16 +201,8 @@ item_features, user_features = None, None
 
 for method in range(4):
 	init_method_num = method # number of matrices initialization method
-	'''temp'''
-	if method != 3:
-		continue
-	'''temp'''
 	for features in list([10, 25, 50, 100]):
 		num_features = features # number of latent features in matrix factorization
-		'''temp'''
-		if features == 10:
-			continue
-		'''temp'''
 		for lambda1 in list([10, 20, 35, 50, 60]):
 			lambda_item = lambda1 # regularization parameter for item features
 			for lambda2 in list([10, 20, 35, 50, 60]):
